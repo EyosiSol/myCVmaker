@@ -1,0 +1,18 @@
+.header-div{
+    background-color: #5FF6CE;
+    height: 12vh;
+    align-content: center;
+}
+.download{
+    position: relative;
+    right: -85%;
+    align-self: flex-end;
+   
+}
+.download:hover{
+    background-color: #5b87ca;
+    cursor: pointer;
+}
+h4{
+    font-size: 1.4rem;
+}
