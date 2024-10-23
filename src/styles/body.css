@@ -1,0 +1,17 @@
+body{
+    background-color: EFEEEE;
+}
+.bod{
+    width: 100%;
+    display: flex;
+}
+.Left-Body{
+    width: 50%;
+}
+.leftHeader{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #5FF6CE;
+    height: 80px;
+}
