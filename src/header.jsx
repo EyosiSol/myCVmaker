@@ -4,7 +4,7 @@ import "./styles/header.css";
 function Header() {
   return (
     <div className="header-div">
-      <Button svg={DownloadIcon} name="Download" classname='download'/>
+      <Button svg={DownloadIcon} name="Download PDF" classname='download' widz='120' heit='60' fontsize='1.2'/>
     </div>
   );
 }
