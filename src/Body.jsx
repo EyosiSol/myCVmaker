@@ -1,5 +1,9 @@
 import './styles/body.css'
 import DropDown from "./components/Dropdown";
+import DisplayPersonal from './components/display';
+import PersonalDetail from './components/personalDetail';
+import { useState } from 'react';
+
 const fonts = [
   "Roboto",
   "Montserrat",
@@ -14,7 +18,17 @@ const fonts = [
   "Arial"
 ];
 const size = [8, 10, 12, 14, 16, 18, 20];
+
+
 function Body() {
+
+  const [formData, setFormData] = useState(null)
+
+  const handleFormSubmit = (data) => {
+    // Update the state with the form data
+    setFormData(data);
+  };
+
   return (
     <>
       <div className="bod">
@@ -24,8 +38,12 @@ function Body() {
             <DropDown name="Font Size (TT)" value={size} def={12}/>
             <button style={{height:'50px'}}>Color</button>
           </div>
+          <PersonalDetail onSubmit={handleFormSubmit}/>
         </div>
-        <div className="Right-Body">RIGHT BOD</div>
+        <div className="Right-Body">
+          <h1>MY Paper</h1>
+          {formData && <DisplayPersonal data={formData}/>}
+        </div>
       </div>
     </>
   );
