@@ -1,4 +1,4 @@
-import PropTypes from "prop-types";
+    import PropTypes from "prop-types";
 import "../styles/personalDetail.css";
 import downarrow from "../assets/arrow.svg";
 import { useState } from "react";
