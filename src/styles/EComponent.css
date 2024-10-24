@@ -1,0 +1,32 @@
+.Ecomponent{
+    border-bottom: 1px solid black;
+    margin: 30px;
+    margin-top: 0px;
+    /* padding-top: 30px; */
+    padding-bottom: 30px;
+}
+
+#Add{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px;
+    background-color: #76ADFF;
+    border: none;
+    border-radius: 6px;
+    height: 40px;
+    width: 190px;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+#Add:hover{
+    background-color: #517fc4;
+    cursor: pointer;
+}
+#Add > img{
+    margin-right: -30px;
+}
+.btndiv{
+    display: flex;
+    justify-content: center;
+}

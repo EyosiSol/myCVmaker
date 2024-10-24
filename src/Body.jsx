@@ -3,6 +3,7 @@ import DropDown from "./components/Dropdown";
 import DisplayPersonal from './components/display';
 import PersonalDetail from './components/personalDetail';
 import { useState } from 'react';
+import EComponent from './components/EComponent';
 
 const fonts = [
   "Roboto",
@@ -39,6 +40,8 @@ function Body() {
             <button style={{height:'50px'}}>Color</button>
           </div>
           <PersonalDetail onSubmit={handleFormSubmit}/>
+          <EComponent type='Education' fill0='Add Education'/>
+          <EComponent type='Experience' fill0='Add Experience'/>
         </div>
         <div className="Right-Body">
           <h1>MY Paper</h1>
